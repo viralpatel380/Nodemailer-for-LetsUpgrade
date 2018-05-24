@@ -2,10 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
+var port = process.env.PORT || 3000;
 const nodemailer = require('nodemailer');
 var sgTransport = require('nodemailer-sendgrid-transport');
 const app = express();
-
+app.listen(process.env.PORT || 3000 );
 // View engine setup
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.render('contact');
+  console.log("Server Started");
 });
 
 app.post('/send', (req, res) => {
@@ -68,4 +70,4 @@ app.post('/send', (req, res) => {
 
   });
 
-app.listen(3000, () => console.log('Server started...'));
+//app.listen(3000, () => console.log('Server started...'));
