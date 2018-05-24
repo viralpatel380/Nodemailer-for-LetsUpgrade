@@ -1,5 +1,5 @@
 {
-  "name": "#LetsUpgrade",
+  "name": "LetsUpgrade",
   "version": "1.0.0",
   "description": "Nodemailer App for #LetsUpgrde",
   "main": "app.js",
@@ -9,8 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.10"
+    "node": "8.9.3",
+    "npm": "6.0.1"
   },
   "author": "Viral Patel",
   "license": "MIT",
