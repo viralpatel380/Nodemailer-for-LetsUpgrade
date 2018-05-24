@@ -11,18 +11,15 @@
     body {
   font-family: 'Lato', georgia;
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-image: url("/Background.png");;
  
-  background-color: rgb(235, 220, 10);
+  background-color: rgb(0, 0, 0);
  text-align: center;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
-img {
-  opacity: 0.1;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
+
 #contact-form {
   max-width: 90%;
   margin: 0 auto;
@@ -43,10 +40,10 @@ input {
   font-weight: 700;
   font-family: 'Lato', georgia;
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   max-width: 90%;
   padding: 1rem;
-  border: 2px dashed rgba(255, 255, 255, 0);
+  border: 2px dashed rgba(255, 255, 255);
   box-sizing: border-box;
   cursor: text;
 }
@@ -54,10 +51,10 @@ input {
 textarea {
   text-align: left;
   /* overflow:hidden; */
-  background-color: #000;
+  background-color: rgb(248, 248, 248);
   resize: none;
   width: 90%;
-  border-color: rgba(255, 255, 255, 0)
+  border-color: rgb(255, 253, 253)
 }
 
 textarea:focus {
@@ -80,20 +77,20 @@ input {
 
 input:required,
 textarea:required {
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+  border-bottom: 2px dashed rgb(255, 255, 255);
 }
 
 input:focus {
-  border-bottom: 2px dashed rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px dashed rgb(255, 253, 253);
+  background-color: rgb(0, 0, 0);
 }
 
 input:required:valid {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 input:required:invalid {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
 }
 
 ::-webkit-input-placeholder {
@@ -133,11 +130,11 @@ input:required:invalid {
 }
 
 .send-icn {
-  fill: rgb(0, 0, 0)
+  fill: rgb(255, 255, 255)
 }
 
 .send-icn:hover {
-  fill: rgba(0, 0, 0, 1);
+  fill: rgb(255, 217, 0);
   cursor: pointer;
 }
 
