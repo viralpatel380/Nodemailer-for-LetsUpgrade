@@ -17,7 +17,6 @@
             background-image: url("/Background.png");
             ;
             background-color: rgb(0, 0, 0);
-            text-align: center;
             font-weight: 300;
             -webkit-font-smoothing: antialiased;
         }
@@ -168,10 +167,16 @@
             color: rgb(0, 0, 0);
         }
         
+        p {
+            text-align: center;
+        }
+        /* The container */
+        
         .container {
             display: block;
             position: relative;
             padding-left: 35px;
+            left: 40%;
             margin-bottom: 12px;
             cursor: pointer;
             font-size: 22px;
@@ -192,7 +197,7 @@
         .checkmark {
             position: absolute;
             top: 0;
-            left: 40%;
+            left: 0;
             height: 25px;
             width: 25px;
             background-color: #eee;
@@ -243,7 +248,7 @@
 
     <form id="contact-form" method="POST" action="send">
         <p>Hey #LetsUpgrade,</p>
-        {{msg}}
+        <p> {{msg}}</p>
         <p>My
             <label for="your-name">First name</label> is
             <input type="text" id="firstname" name="name" minlength="3" placeholder="(your first name here)" required> &</p>
@@ -261,7 +266,7 @@
         <p>
             <input type="mobile" id="no" name="phone" placeholder="(your Contact No.)" required>
         </p>
-        <p> I am <strong> interested </strong> in <br/>
+        <p> I am <strong> intrested </strong> in <br/>
             <div class="checkboxes" style="">
                 <label class="container">Blockchain
                             <input type="checkbox" value="Blockchain" name="chk">
