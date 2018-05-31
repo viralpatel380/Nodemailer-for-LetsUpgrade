@@ -40,6 +40,7 @@ app.get('/contact', (req, res) => {
   console.log("Server Started :: Contact");
 });
 
+// Mail Body
 app.post('/send', (req, res) => {
   const output = `
   <!DOCTYPE html>
@@ -304,7 +305,7 @@ app.post('/send', (req, res) => {
                       <li style="margin:0 0 10px 30px;" class="list-item-first"><strong>Name :</strong>  ${req.body.name}</li>
                       <li style="margin:0 0 10px 30px;"><strong>Email :</strong>  ${req.body.email}</li>
                                           <li style="margin: 0 0 0 30px;" class="list-item-last"><strong>Mobile No :</strong>  ${req.body.subject}</li>
-                                          <li style="margin: 0 0 0 30px;" class="list-item-last"><strong>Intrest :</strong>  ${req.body.message}</li>
+                                          <li style="margin: 0 0 0 30px;" class="list-item-last"><strong>Intrest :</strong>  ${req.body.chk}</li>
                     </ul>
                                     
                                   </td>
@@ -423,7 +424,6 @@ app.post('/send', (req, res) => {
       from: '"#LetsUpgrade, India" <contact@upgrde.tech>', // sender address
       to: 's.viralbp@itmvu.in, saikirans@itm.edu', // list of receivers
       subject: '#LetsUpgrade | New Entry', // Subject line
-      text: 'Hello world?', // plain text body
       html: output // html body
   };
   // send mail with defined transport object
