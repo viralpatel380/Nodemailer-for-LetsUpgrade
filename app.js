@@ -35,6 +35,10 @@ app.get('/courses', (req, res) => {
   res.render('services');
   console.log("Server Started :: Services");
 });
+app.get('/blockchain', (req, res) => {
+  res.render('block');
+  console.log("Server Started :: Blockchain");
+});
 app.get('/contact', (req, res) => {
   res.render('contact');
   console.log("Server Started :: Contact");
