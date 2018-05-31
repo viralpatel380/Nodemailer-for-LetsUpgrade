@@ -45,7 +45,8 @@
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form"  method="POST" action="send">
 				<span class="contact100-form-title">
-					<img src="images/logo.png"style='width:100%;' border="0" alt="Null">
+					{{!-- <img src="images/logo.png"style='width:100%;' id="img" border="0" alt="Null"> --}}
+					<center><h1 id="lets">#LetsUpgrade</h1></center>
 				</span> <center>
 <p>You may be seeing news all around of technology getting upgraded each and every day and someone of you may be also feeling the need to upgrade themselves in the technology race, we the #LetsUpgrade Community have undertaken an initiative with ITM University to provide Affordable professional training with the full hands-on industry suggested curriculum, to provide you an opportunity to upgrade yourself with us.</p></center>
 				<br><div class="wrap-input100 validate-input" data-validate="Please enter your name">
@@ -120,6 +121,36 @@
   src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/Playlist.otf);
+}
+
+#lets {
+font-family: myFirstFont;
+}
+h1{
+	
+}
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
 
 label{
 	position: relative;
@@ -235,6 +266,7 @@ input[type="radio"]:disabled + .label-text:before{
 	75%{transform: scale(1.4);}
 	100%{transform: scale(1);}
 }
+
 </style>
 
 
