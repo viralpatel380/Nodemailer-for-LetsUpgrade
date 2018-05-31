@@ -5,11 +5,20 @@ const path = require('path');
 var port = process.env.PORT || 3000;
 const nodemailer = require('nodemailer');
 var sgTransport = require('nodemailer-sendgrid-transport');
+var cons = require('consolidate');
+
+
 const app = express();
 app.listen(process.env.PORT || 3000 );
 // View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+/* app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars'); */
+app.use(express.static(path.join(__dirname, 'public')));
+
+// view engine setup
+app.engine('html', cons.swig)
+//app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
 
 // Static folder
 //app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -19,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.render('contact');
+  res.render('home');
   console.log("Server Started");
 });
 
@@ -28,10 +37,10 @@ app.post('/send', (req, res) => {
     <p>#LetsUpgrade Chennai</p>
     <h3>New Entry</h3>
     <ul>  
-      <li>Name: ${req.body.name}  ${req.body.sec}</li>
+      <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
-      <li>Phone: ${req.body.phone}</li>
-      <li> Intrest : ${req.body.chk}</li>
+      <li>Phone: ${req.body.subject}</li>
+      <li> Message : ${req.body.message}</li>
     </ul>
    
   `;

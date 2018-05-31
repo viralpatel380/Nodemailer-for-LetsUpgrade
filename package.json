@@ -16,9 +16,12 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "consolidate": "^0.15.1",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "nodemailer": "^4.1.0",
-    "nodemailer-sendgrid-transport": "^0.2.0"
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "path": "^0.12.7",
+    "swig": "^1.4.2"
   }
 }
