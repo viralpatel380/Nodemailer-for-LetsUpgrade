@@ -15,8 +15,8 @@
                 img_pin = 'images/icons/location.png';
             }
             if (data_map_x == null || data_map_y == null) {
-                data_map_x = 13.0827;
-                data_map_y = 80.2707;
+                data_map_x = 13.067439;
+                data_map_y = 	80.237617;
             }
             if (scrollwhell == null) {
                 scrollwhell = 0;
@@ -203,8 +203,8 @@
             }
             ];
 
-            var latitude = data_map_x,
-                longitude = data_map_y,
+            var latitude = 	13.067439,
+                longitude = 80.237617,
                 map_zoom = 14;
 
             var locations = [
