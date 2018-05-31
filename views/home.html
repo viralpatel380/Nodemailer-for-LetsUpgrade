@@ -48,9 +48,9 @@
 		<nav>
 			<ul class="menu-list">
 				<li class="active"><a href="home.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
+				<li><a href="/service">Services</a></li>
 				<!-- <li><a href="blog.html">Blog</a></li> -->
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="/contact">Contact</a></li>
 			<!-- 	<li><a href="elements.html">Elements</a></li> -->
 			</ul>
 		</nav>
@@ -312,7 +312,7 @@
 					</div>
 				</div>
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-6 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-039-vector"></i>
@@ -327,7 +327,7 @@
 					</div>
 				</div>
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-6 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-036-brainstorming"></i>
@@ -343,7 +343,7 @@
 					</div>
 				</div>
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+	<!-- 			<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-026-search"></i>
@@ -359,9 +359,9 @@
 								sectors in the world</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+<!-- 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-018-laptop-1"></i>
@@ -374,9 +374,9 @@
 								peer-to-peer learning</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+<!-- 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-043-sketch"></i>
@@ -386,9 +386,9 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- single service -->
-				<div class="col-md-4 col-sm-6">
+<!-- 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
 							<i class="flaticon-012-cube"></i>
@@ -398,7 +398,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 <!-- 			<div class="text-center">
 				<a href="" class="site-btn">Browse</a>
@@ -484,7 +484,7 @@
 				</div>
 				<!-- contact form -->
 				<div class="col-md-6 col-pull">
-					<form class="form-class" id="con_form">
+					<form class="form-class" id="con_form"  method="POST" action="send">
 						<div class="row">
 							<div class="col-sm-6">
 								<input type="text" name="name" placeholder="Your name">
@@ -494,7 +494,27 @@
 							</div>
 							<div class="col-sm-12">
 								<input type="text" name="subject" placeholder="Your Contact No">
-								<textarea name="message" placeholder="Message"></textarea>
+								<div class="checkboxes" style="">
+										<input type="checkbox" value="Blockchain" name="chk">
+									Blockchain
+											
+												
+											  <input type="checkbox" value="AI" name="chk">
+									<label class="container">Artificial Intelligence
+												
+													<span class="checkmark"></span>
+												  </label>
+												  <input type="checkbox" value="AR" name="chk">
+									<label class="container">Augmented Reality
+													
+														<span class="checkmark"></span>
+													  </label>	<input type="checkbox" value="IoT" name="chk">
+									<label class="container">IoT
+														
+															<span class="checkmark"></span>
+														  </label>
+					
+								</div>
 								<button class="site-btn" type="submit">send</button>
 							</div>
 						</div>
