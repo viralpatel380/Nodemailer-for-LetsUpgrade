@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   res.render('home');
   console.log("Server Started :: Home");
 });
-app.get('/service', (req, res) => {
+app.get('/courses', (req, res) => {
   res.render('services');
   console.log("Server Started :: Services");
 });
