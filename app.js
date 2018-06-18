@@ -393,8 +393,8 @@ app.post('/send', (req, res) => {
    // port:  465,
    // secure: false, // true for 465, false for other ports
    auth: {
-    user: 'Viralpatel380', // generated ethereal user
-    pass: 'viralpatel380'  // generated ethereal password
+    user: 'pratik8575', // generated ethereal user
+    pass: 'APPLE33a'  // generated ethereal password
 }
   });
 
